@@ -5,7 +5,7 @@
  */
 
 
-
+/* Add new tips */
 //获取所有地址
 function getAllAddress() {
     var get_add_apiURL = apiRoot+'index.php?r=admin/user/user-address/user-address-list',

@@ -3,6 +3,7 @@
  * @description 功能详细描述
  * @author name date 20xx-xx-xx
  */
+ /* Add new tips. */
 ;(function(){
     /*
      * 全局启动加载

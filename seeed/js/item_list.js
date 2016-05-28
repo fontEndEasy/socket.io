@@ -3,7 +3,7 @@
  * @description 分类页功能
  * @author seeed-int date 2015-12-23
  */
-
+/* Add new tips */
 var itemList = function() {
     
     $('title').text('Seeed Shop,Boost ideas,Extend the Reach');

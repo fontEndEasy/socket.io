@@ -3,6 +3,7 @@
  * @description 登录&注册 功能js
  * @author seeed-int date 2015-12-18
  */
+ /* Add new tips. */
 //var apiRoot = 'http://192.168.1.40/seeed-cc';
 //var apiRoot = '';
 

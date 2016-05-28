@@ -4,6 +4,8 @@
  * @author seeed-int 2015-12-16
  * edit by Alice 2016-04-06
  */
+ 
+ /* Add new tips. */
 var getItemDetail = function(){
     
     var p_id;           //定义基础p_id
