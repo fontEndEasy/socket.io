@@ -10,8 +10,8 @@ var baseURL     = '//'+window.location.host,
     apiRoot     = baseURL+'/seeed-cc/api/',
     imageRoot   = baseURL+'/';
 
-// add ingrone content.
-// 数据路径
+
+//数据路径
 
 /*!
  * jQuery Cookie Plugin v1.4.1
