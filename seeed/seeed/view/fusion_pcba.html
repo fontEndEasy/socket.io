@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+ <head id="html-head"> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <title>Fusion</title> 
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="" /> 
+  <script src="/js/lib/jquery-1.11.3.min.js"></script> 
+  <script src="/js/webuploader.min.js"></script>
+  <script src="/js/base_module.js"></script> 
+  <link rel="stylesheet" href="/css/lib/public.css" /> 
+  <link rel="stylesheet" href="/css/main.css" /> 
+  <link rel="stylesheet" href="/css/fusion.css" />
+ </head> 
+ <body class="bg-ed"> 
+  <header class="header" id="header"></header> 
+  <!-- fusion_main_begin --> 
+  <section class="fusion com-width center clear" id="fusion_ms"> 
+   <!-- fieldsets --> 
+    <fieldset class="fusin_sec">
+                <div class="fusion_l">
+                    <h4 class="assem_tit">
+                        <span class="previous edit fusion_pre">
+                            Edit
+                        </span>
+                        ● PCB Available Options 
+                    </h4>
+                    <h4 >
+                        ● PCB Assembly
+                    </h4>
+                
+                                    <div class="form-group fpcb">
+                                        <label class="control-label" id="PcbaAttribName-125"><s class="c">*</s> PCBA Qty</label>
+                                  
+                                          <div class="fusainput">  <input type="text" min="2" max="100" value="5" posts="5" class="form-control PcbaAttrib" name="PcbaAttrib" id="PcbaAttrib-125">
+                                            <p class=" form-inline-fa">For prototyping, we suggest it starts from 5pcs.<span id="pcbaProcess" class="fa-icon hide"><i class="fa fa-spinner fa-pulse"></i></span></p>
+                                            </div>
+                                        </div>
+                        <div class="uploadFile mt20">              
+                              
+                           <div class="upload btn-reverse">
+                           
+                             <div class="upload_box"><span class="glyphicon glyphicon-cloud-upload"></span> Select your Gerber File(only zip, rar accepted)</div> 
+                              
+                            </div></div>
+                              <div class="pcba_list">
+
+
+                              <div class="guideline">
+                                Please format your BOM file according to the <a href="#">template</a>.
+Fill the compelete manufacturer part number, in order to be matched and sourced the right parts.
+                            </div>
+
+                            <div class="pcba-warning">
+                            <p><i></i> Oops, these parts can't be matched or are out of stock. <br>You can send us your Gerber file, BOM, and requirement <a href="mailto:propagate@seeed.cc">for an offline quote</a></p>
+                            <span class="label label-default">296-1734-5-ND</span> <span class="label label-default">HCS0503B</span> 
+                            </div>
+                            <h3>BOM List</h3>
+                            <div class="table-responsive">
+                                    <table class="table-bordered">
+                                        <thead>
+                                            <tr>
+                                               <th></th> 
+                                               <th>Part/Designator</th>
+                                               <th>Mfr. Part #</th>
+                                               <th>Description</th>
+                                               <th>Quantity</th>
+                                               <th>Unit Price</th>
+                                               <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><input type="checkbox" onclick="totalPrices()" id="oplItem[]" name="oplItem[]"></th>
+                                                <th><span name="opl_parts_text[]" class="word-width-100">C2</span></th>
+                                                <th><b name="opl_mpn_text[]">16SVPC</b></th>
+                                                <th>
+                                                    <div class="js-has-more pointer" ><i id="MoveListShow0" class="fa fa-chevron-up"></i></div>
+
+                                                </th>
+                                                <th> <span>1</span> × <span name="opl_qty_text[]">5</span></th>
+                                                <th name="opl_unit_price_text[]">$0</th>
+                                                <th name="opl_amount_price_text[]">$0.00</th>
+                                            </tr>
+                                            <tr class="has-more warning" id="more_opl_list0" style="overflow: hidden; display: table-row;">
+                            <td colspan="7">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-condensed inner-tab" width="100%">
+                                        <tbody><tr class="success bort0">
+                                            <th>Part</th>
+                                            <th>Description</th>
+                                            <th>Unit Price</th>
+                                            <th>Amount</th>
+                                            <th>Actions</th>
+                                        </tr><tr class="warning">
+                                <td>16SVPC120M</td>
+                                <td id="opl_description_text_1204263920"><span class="word-width-180">Aluminum Organic Polymer Capacitors 16volts 120uF ESR 27mohm</span></td>
+                                <td>$1.82052</td>
+                                <td id="opl_amount_price_1204263920">$9.1026</td>
+                                <td>
+                                <input name="opl_mpn_1204263920" type="hidden" value="16SVPC120M">
+                                <input name="opl_unit_price_1204263920" type="hidden" value="1.82052">
+                                <input name="opl_assembly_price_1204263920" type="hidden" value="0.1">
+                                <input name="waste_qty_1204263920" type="hidden" value="5">
+                                <input name="category_1204263920" type="hidden" value="Other">
+                                <input name="package_1204263920" type="hidden" value="">
+                                <input name="pin_count_1204263920" type="hidden" value="0">
+                                <span class="btn btn-xs js-use" id="btn_1204263920" onclick="itemSelect(0,1204263920)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC100M</td>
+                                <td id="opl_description_text_1204167034"><span class="word-width-180">Aluminum Organic Polymer Capacitors 16volts 100uF ESR 24mohm</span></td>
+                                <td>$0.85389</td>
+                                <td id="opl_amount_price_1204167034">$4.26945</td>
+                                <td>
+                                <input name="opl_mpn_1204167034" type="hidden" value="16SVPC100M">
+                                <input name="opl_unit_price_1204167034" type="hidden" value="0.85389">
+                                <input name="opl_assembly_price_1204167034" type="hidden" value="0.1">
+                                <input name="waste_qty_1204167034" type="hidden" value="5">
+                                <input name="category_1204167034" type="hidden" value="Other">
+                                <input name="package_1204167034" type="hidden" value="">
+                                <input name="pin_count_1204167034" type="hidden" value="0">
+                                <span class="btn  btn-xs js-use" id="btn_1204167034" onclick="itemSelect(0,1204167034)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC39MV</td>
+                                <td id="opl_description_text_1204170330"><span class="word-width-180">Aluminum Organic Polymer Capacitors 16volts 39uF ESR 27mohm</span></td>
+                                <td>$0.83304</td>
+                                <td id="opl_amount_price_1204170330">$4.1652</td>
+                                <td>
+                                <input name="opl_mpn_1204170330" type="hidden" value="16SVPC39MV">
+                                <input name="opl_unit_price_1204170330" type="hidden" value="0.83304">
+                                <input name="opl_assembly_price_1204170330" type="hidden" value="0.1">
+                                <input name="waste_qty_1204170330" type="hidden" value="5">
+                                <input name="category_1204170330" type="hidden" value="Other">
+                                <input name="package_1204170330" type="hidden" value="">
+                                <input name="pin_count_1204170330" type="hidden" value="0">
+                                <span class="btn btn-xs js-use" id="btn_1204170330" onclick="itemSelect(0,1204170330)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC270M</td>
+                                <td id="opl_description_text_1204167036"><span class="word-width-180">Aluminum Organic Polymer Capacitors 16volts 270uF ESR 16mohm</span></td>
+                                <td>$1.95287</td>
+                                <td id="opl_amount_price_1204167036">$9.76435</td>
+                                <td>
+                                <input name="opl_mpn_1204167036" type="hidden" value="16SVPC270M">
+                                <input name="opl_unit_price_1204167036" type="hidden" value="1.95287">
+                                <input name="opl_assembly_price_1204167036" type="hidden" value="0.1">
+                                <input name="waste_qty_1204167036" type="hidden" value="5">
+                                <input name="category_1204167036" type="hidden" value="Other">
+                                <input name="package_1204167036" type="hidden" value="">
+                                <input name="pin_count_1204167036" type="hidden" value="0">
+                                <span class="btn btn-xs js-use" id="btn_1204167036" onclick="itemSelect(0,1204167036)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC150M</td>
+                                <td id="opl_description_text_1500305703"><span class="word-width-180">PANASONIC ELECTRONIC COMPONENTS&nbsp;   16SVPC150M&nbsp;   Electrolytic Capacitor, SVPC Series, 150 µF, Radial Can - SMD, 0.022 ohm, 16 V, 2000 hours @ 105°C</span></td>
+                                <td>$2.41588</td>
+                                <td id="opl_amount_price_1500305703">$12.0794</td>
+                                <td>
+                                <input name="opl_mpn_1500305703" type="hidden" value="16SVPC150M">
+                                <input name="opl_unit_price_1500305703" type="hidden" value="2.41588">
+                                <input name="opl_assembly_price_1500305703" type="hidden" value="0.1">
+                                <input name="waste_qty_1500305703" type="hidden" value="10">
+                                <input name="category_1500305703" type="hidden" value="Capacitor">
+                                <input name="package_1500305703" type="hidden" value="">
+                                <input name="pin_count_1500305703" type="hidden" value="0">
+                                <span class="btn btn-xs js-use" id="btn_1500305703" onclick="itemSelect(0,1500305703)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC68MV</td>
+                                <td id="opl_description_text_1500244744"><span class="word-width-180">PANASONIC ELECTRONIC COMPONENTS&nbsp;   16SVPC68MV&nbsp;   Electrolytic Capacitor, SVPC Series, 68 µF, Radial Can - SMD, 0.025 ohm, 16 V, 2000 hours @ 105°C</span></td>
+                                <td>$2.26206</td>
+                                <td id="opl_amount_price_1500244744">$11.3103</td>
+                                <td>
+                                <input name="opl_mpn_1500244744" type="hidden" value="16SVPC68MV">
+                                <input name="opl_unit_price_1500244744" type="hidden" value="2.26206">
+                                <input name="opl_assembly_price_1500244744" type="hidden" value="0.1">
+                                <input name="waste_qty_1500244744" type="hidden" value="10">
+                                <input name="category_1500244744" type="hidden" value="Capacitor">
+                                <input name="package_1500244744" type="hidden" value="">
+                                <input name="pin_count_1500244744" type="hidden" value="0">
+                                <span class="btn btn-xs js-use" id="btn_1500244744" onclick="itemSelect(0,1500244744)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC68M</td>
+                                <td id="opl_description_text_1204184125"><span class="word-width-180">有機聚合鋁電容器 16volts 68uF ESR 30mohm</span></td>
+                                <td>$1.62191</td>
+                                <td id="opl_amount_price_1204184125">$8.10955</td>
+                                <td>
+                                <input name="opl_mpn_1204184125" type="hidden" value="16SVPC68M">
+                             
+                                <span class="btn btn-xs js-use" id="btn_1204184125" onclick="itemSelect(0,1204184125)">Use</span></td>
+                            </tr><tr class="warning">
+                                <td>16SVPC39M</td>
+                                <td id="opl_description_text_1204170332"><span class="word-width-180">Aluminum Organic Polymer Capacitors 16volts 39uF ESR 35mohm</span></td>
+                                <td>$1.41219</td>
+                                <td id="opl_amount_price_1204170332">$7.06095</td>
+                                <td>
+                                <input name="opl_mpn_1204170332" type="hidden" value="16SVPC39M">
+                                
+                                <span class="btn btn-xs js-use" id="btn_1204170332" onclick="itemSelect(0,1204170332)">Use</span></td>
+                            </tr></tbody></table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="" name="auto_opl_list[]">
+                            <th><input type="checkbox" onclick="totalPrices()" id="oplItem[]" name="oplItem[]" checked="checked" disabled=""></th>
+                            <th><span name="opl_parts_text[]" class="word-width-100">C3</span>
+                        
+                        </th>
+                        <th><b name="opl_mpn_text[]">SAP050100CN-C</b><br><span name="opl_sku_text[]">Seeed SKU:313080037</span></th>
+                        <th><div class="" onclick="MoveLists(2)"><span name="opl_description_text[]" class="word-width-180">USB Power Adapter;5V/1A</span></div></th>
+                        <th> <span>1</span> × <span name="opl_qty_text[]">5</span></th>
+                        <th name="opl_unit_price_text[]">$4.2969</th>
+                        <th name="opl_amount_price_text[]">$21.4845</th>
+                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                           <div class="text-right">
+                                    <input type="button" name="PCB Assembly" class="fusion_next action-button"
+                                    value="PCB Assembly" />
+                                     <button id="btn-AddPcbToCart" data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn action-button addcart js-add-cart" name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                                </div>   
+                              </div>
+                    
+                               
+
+
+
+                </div>
+                <div class="fusion_r grayBoxs">
+                    <div class="gerberList">
+                        <span class="c9 bold OriginalTotalPricesBox  hide " style="text-decoration: line-through; display: none;">
+                            $
+                            <span class="OriginalTotalPrices">
+                               
+                            </span>
+                        </span>
+                        <span class="big">
+                            $
+                            <span class="TotalPrices">
+                               
+                            </span>
+                        </span>
+                    </div>
+                    <div class="quotationList">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul class="list-group-cart">
+                              <li id="PcbServicePriceBox" class="PcbServicePriceBox">
+                                <div class="priceList">
+                                    PCB Cost
+                                    <span class="pull-right">
+                                        <span class="c9 bold  hide" style="text-decoration: line-through; display: none;"
+                                        id="pcbOriginalPriceBox">
+                                            $
+                                            <span id="pcbOriginalPriceCost">
+                                               
+                                            </span>
+                                        </span>
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbServicePrice">
+                                                
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                               
+                               
+                            </li>
+                           
+                            <li class="PcbaServicePriceBox" class="hide">
+                                <div class="priceList">
+                                    Components Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaServicePrice">
+                                                0.0000
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <div class="PcbaAttribPrice-125">
+                                    <span class="c9">
+                                        PCBA Qty.:
+                                    </span>
+                                    <span class="PcbaAttribPriceVal-125">
+                                        5n
+                                        <span class="PcbaAttribPriceCost-125" class="pull-right">
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="PcbaAssemblyPriceBox" class="hide">
+                                <div class="priceList">
+                                    Assembly Cost
+                                    <span class="c9 bold  hide" style="text-decoration:line-through;" id="OriginalAssemblyPriceBox">
+                                        $
+                                        <span class="OriginalAssemblyPrice">
+                                            0
+                                        </span>
+                                    </span>
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaAssemblyPrice">
+                                                0
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+
+                                <input type="hidden" class="opl_handling_fee" value="0" />
+                            </li>
+                            <li class="PcbaSetupPriceBox" class="hide">
+                                <div class="priceList">
+                                    Setup Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaSetupPrice">
+                                                0
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                        
+                                <input type="hidden" class="PcbaSetupFee" value="10" />
+                                <input type="hidden" class="WasteFee" value="0" />
+                            </li>
+                            <li>
+                                <div class="text-right group-cart-total">
+                                    <span class="total-label">
+                                        Sub-Total:
+                                    </span>
+                                    <span class="c9 bold OriginalTotalPricesBox  hide" style="text-decoration: line-through; display: none;">
+                                        $
+                                        <span class="OriginalTotalPrices">
+                                          
+                                        </span>
+                                    </span>
+                                    <b class="oc">
+                                        $
+                                        <span id="TotalPrices" class="TotalPrices">
+                                          
+                                        </span>
+                                    </b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" class="base_delivery_date" value="1461747898" />
+                    <div class="mb5 hide">
+                        <b>
+                            Estimated Shipping Date:
+                            <span class="delivery_date">
+                                Apr. 27, 2016
+                            </span>
+                        </b>
+                    </div>
+                    <div class="text-center">
+                        <button  data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn btn-success btn-block btn btn-primary js-add-cart" 
+                        name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+  </section> 
+  <!-- fusion_main_end --> 
+  <footer class="clear" id="footer"></footer> 
+  <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script> 
+  <script src="/js/fusion.js"></script>
+        <script>
+            $(function() {
+                getItemDetail();
+               
+            });
+        </script>
+ </body>
+</html>

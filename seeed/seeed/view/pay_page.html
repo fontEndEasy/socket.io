@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seeed PayPage</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body style="display:none;">
+   <div class="creadit-page-wrap">
+       <a href="index.html" class="creadit-page-logo">
+           <img src="/img/logo.png" alt="" class="state-logo">
+       </a>
+    <!--信用卡支付框-->
+       <div class="creadit-page">
+           <!--加载信用卡动画-->
+           <div class="l-loading loading">
+               <img src="/img/seeedloading.gif" alt="loading" class="loading-gif">
+               <div class="loading-text">Connectting to Credit Card center, Just for a second...</div>
+           </div>
+
+            <form id="braintree-form" method="post" action="/api/index.php?r=bazaar/payment/braintree/checkout">
+               <div class="title">ENTER YOUR CREDIT CARD INFORMATION</div>
+               <div class="tips">This is an SSL encrypted credit card payment</div>
+                <div id="braintree"></div>
+                <div class="tips">The last 3 digits on the back of your credit card or the last 4 digits on the front of your amex card.</div>
+                <div class="buttons">
+                    <input type="submit" class="btn-confirm btn" value="Confirm"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/lib/jquery-1.11.3.min.js"></script>
+    <script src="/js/lib/public_module.js"></script>
+    <script src="https://js.braintreegateway.com/js/braintree-2.23.0.min.js"></script>
+    <script src="/js/credit_pay.js"></script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<script>
+    // Include the UserVoice JavaScript SDK (only needed once on a page)
+    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/nORfI8dR8KHiLECiDYNUWQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+    // Set colors
+    UserVoice.push(['set', {
+      accent_color: '#e2753a',
+      trigger_color: 'white',
+      trigger_background_color: '#e2753a'
+    }]);
+    // Add default trigger to the bottom-right corner of the window:
+    UserVoice.push(['addTrigger', {mode: 'contact', trigger_position: 'bottom-right' }]);
+    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+    UserVoice.push(['autoprompt', {}]);
+    //Modify default widget
+    var auto_id = setInterval(uservoice_customer, 50);
+    function uservoice_customer(){
+      if($("#Layer_1").length > 0){
+        $("#Layer_1").height('0').after('<span class="uv_customer">Feedback & Support</span>')
+          .parents(".uv-icon.uv-bottom-right").css({
+            'height': '32px',
+            'bottom': '0'
+          });
+        auto_id = window.clearInterval(auto_id);
+     }
+    }
+</script>

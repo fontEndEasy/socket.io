@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html-head">
+    <meta charset="utf-8">
+    <script src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script src="../js/base_module.js"></script>
+    <link rel="stylesheet" href="../js/plugin/swiper2/idangerous.swiper.css">
+    <script src="../js/plugin/swiper2/idangerous.swiper.min.js"></script>
+</head>
+<body class="bg-ed" id="index">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="header" id="header"></header>
+
+    <!--content-->
+    <section class="index-content com-width center rel">
+       <div class="js-banner-box clear mb40">
+        <!--图片轮播-->
+            <div class="carousel rel carousel-index fr">
+               <a href="#" class="arr-left arr"><i class="fa fa-angle-left"></i></a>
+               <a href="#" class="arr-right arr"><i class="fa fa-angle-right"></i></a>
+               <!--轮播 start-->
+                <div class="swiper-container" id="carousel-index">
+                  <div class="swiper-wrapper">
+
+<!--
+                      <div class="swiper-slide"> 
+                        <img src="../img/index_banner_1000px.png"> 
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../img/index_banner_1000px.png">
+                      </div>
+-->
+                  </div>
+                </div>
+                <div class="pagination"></div>
+                <!--轮播 end-->
+            </div>
+        </div>
+        
+        <!--品牌show-->
+        <div class="brand-show item-block item-show clear">
+<!--
+            <a href="" title="" class="item">
+                <img src="../img/brand.png" alt="">
+            </a>
+            <a href="" title="" class="item">
+                <img src="../img/brand.png" alt="">
+            </a>
+            <a href="" title="" class="item">
+                <img src="../img/brand.png" alt="">
+            </a>
+            <a href="" title="" class="item">
+                <img src="../img/brand.png" alt="">
+            </a>
+-->
+        </div>
+        
+        <!--占位动画-->
+        <div class="c-width center loading-block">
+            <img src="../img/seeedloading.gif" alt="Seeed">
+        </div>
+        <div class="c-width center loading-block">
+            <img src="../img/seeedloading.gif" alt="Seeed">
+        </div>
+        <div class="c-width center loading-block">
+            <img src="../img/seeedloading.gif" alt="Seeed">
+        </div>
+        <div class="c-width center loading-block">
+            <img src="../img/seeedloading.gif" alt="Seeed">
+        </div>
+        
+        
+
+        <!--商品展示 带标签-->
+<!--
+        <div class="item-block clear tag-box">
+            <div class="tag-block fl">
+               <div class="title">HOT TAG</div>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+                <a href="" class="tag btn-normal">Arduino</a>
+            </div>
+            <div class="item-show fr">
+                <div class="title">
+                    HOT PRODUCTS
+                </div>
+                <div class="block-outer item-3 clear">
+                    <div class="block-container clear">
+                        <a href="item_detail.html?p_id=2017" class="item">
+                            <img src="../img/index_data/top_picks/top1.jpg" alt="">
+                            <div class="info">
+                                <div class="name">LinkIt ONE</div>
+                                <div class="price">$50.00</div>
+                            </div>
+                        </a>
+                        <a href="item_detail.html?p_id=2536" class="item">
+                            <img src="../img/index_data/top_picks/top2.jpg" alt="">
+                            <div class="info">
+                                <div class="name">4WD Driver Platform V1.0</div>
+                                <div class="price">$50.00</div>
+                            </div>
+                        </a>
+                        <a href="item_detail.html?p_id=2151" class="item">
+                            <img src="../img/index_data/top_picks/top3.jpg" alt="">
+                            <div class="info">
+                                <div class="name">Intel® Edison Breakout Kit</div>
+                                <div class="price">$50.00</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        
+        <!--频道选择 FUSION&PROPAGATE-->
+        <div class="item-block channel-show">
+            <div class="title">INNOVATE WITH SEEED</div>
+            <div class="clear">
+                <a href="fusion_pcb.html" class="item fl js-set-fusion" target="_self">
+                    <img src="../img/fusion.png">
+                    <div class="info">
+                        <div class="f24 f-dp-m c-0d ">FUSION</div>
+                        <div class="c-fusion">
+                            <p class="dis c-9b f14 mt30">WE ARE THE MOST RELIABLE PRINT CIRCUIT BOARD SUPPLIER. OUR SERVICE IS EASY TO USE. UPLOAD YOUR GERBER FILE ON THE WEBSITE, GET AN INSTANT QUOTATION. YOU WILL RECEIVE YOUR PCB IN JUST A FEW DAYS!</p>
+                            <p class="price-dis c-4a">ONLY $9.9 FOR 10 PIECE!</p>
+                            <div class="btn dis-block radius-title">KNOW MORE</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="//www.seeedstudio.com/propagate/" class="item fr js-set-fusion" target="_self">
+                    <img src="../img/propagate.png"> 
+                    <div class="info">
+                        <div class="f24 f-dp-m c-0d">PROPAGATE</div>
+                        <div class="c-fusion">
+                            <p class="dis c-9b f14 mt30">SEEED PROPAGATE SERVICE IS A TURN-KEY SERVICE TO FACILITATE MAKERS FROM AN IDEA TO MASS PRODUCTION. WE PROVIDES SERVICE LIKE PROTOTYPING, ODM, OEM, DISTRIBUTION TO DROP SHIPPING.</p>
+                            <p class="price-dis c-4a">SHOW YOUR PRODUCT TO THE WORLD!</p>
+                            <div class="btn dis-block radius-title">KNOW MORE</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+       
+    </section>
+    <footer class="footer" id="footer"></footer>
+    <script src="../js/index.js"></script>
+    <script>
+        $(function(){
+            loadIndex();
+        });
+    </script>
+</body>
+</html>

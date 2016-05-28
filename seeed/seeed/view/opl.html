@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html-head">
+    <meta charset="utf-8">
+    <script src="/js/lib/jquery-1.11.3.min.js"></script>
+    <script src="/js/base_module.js"></script>
+    <link rel="stylesheet" href="/js/plugin/swiper2/idangerous.swiper.css"> 
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+    
+    <header class="header" id="header"></header>
+
+    <!-- item-list 商品列表-->
+    <section class="com-width center clear" id="opl">
+       <!--筛选栏-->
+        <ul class="opl-filter-list f-os-l f14 fl js-opl-list mt20">
+            <!--<li><a href="#">seeed</a></li>-->
+        </ul>
+        <!--content 内容区-->
+        <div class="opl-content fr">
+            <!--描述-->
+            <div class="description"></div>
+            <!--加载列表-->
+            <div class="opl-content-list js-opl-content-list">
+            </div>
+            <!--总价区-->
+            <div class="opl-total bg-f9 tr mt10 js-opl-total f12 hide">
+                <span class="f-os-b">Total</span>
+                <span>(<span class="js-total-count mr5">4</span>items)</span>
+                <span class="c-9d ml20">USD</span>
+                <span class="f-os-b">$64.0</span>
+                <div class="inline-block ml20 rel">
+                    <a href="#" class="btn-confirm btn-add-opl js-add-select " style="display:inline-block;">ADD SELETED</a>
+                    <div class="abs select-wraning warning  animated">Please select your product</div>
+                </div>
+                <input type="checkbox" class="ml20 js-add-select-all mr40">
+            </div>
+        </div> 
+        
+          
+    </section>
+    <footer class="clear" id="footer"></footer>
+    <script src="/js/opl.js"></script>
+    <script>
+        ;(function(){
+            $(function(){
+                opl();
+            })
+        })()
+    </script>
+</body>
+</html>

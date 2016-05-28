@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, minimun-scale=1.0, maxmun-scale=1.0, user-scalable=1.0">
+    <title>register-Seeed</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author " content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="/css/lib/reset.css">
+    <link rel="stylesheet" href="/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/lib/public.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <!--[if lt IE9]>
+    <script type="text/javascript" src="/js/plugin/html5shiv.js"></script>
+    <![endif]-->
+    <!--plugin-->   
+</head>
+<body>
+    <header class="com-width center mtb50"><a href="index.html" class="logo dis-block"><img src="/img/logo.png" alt="" class="state-logo"></a></header>
+    <section class="center user-wrap user-operation f12">
+        <h1 class="f-dp-m f20">REGISTER</h1>
+        
+        <div class="com-group-input rel mt30">
+            <div class="label">Email address</div>
+            <input type="email" spellcheck="false" class="input f14" placeholder="Email address" id="email">
+            <div class="warning tr hide abs">Wrong Email</div>
+        </div>
+        
+        <div class="com-group-input rel mt30">
+            <div class="label">Password</div>
+            <input type="password" spellcheck="false" class="input f14" placeholder="Your Password" id="password">
+            <div class="warning tr hide abs">Wrong password</div>
+        </div>
+        
+        <div class="com-group-input rel mt30">
+            <div class="label">Confirm Password</div>
+            <input type="password" class="input f14" placeholder="Confirm Password" id="re-password">
+            <div class="warning tr hide abs">Wrong password</div>
+        </div>
+        <!--
+        <div class="com-group-input rel mt30">
+            <div class="label">Country</div>
+            <select name="" id="" class="select f14">
+                <option value="">USA</option>
+                <option value="">CHINA</option>
+                <option value="">UK</option>
+            </select>
+            <div class="warning tr hide abs">Wrong password</div>
+        </div>
+        
+        <div class="clear">
+            <div class="com-group-input fl">
+                <div class="label">Continent</div>
+                <select id="" class="select sm-select f14">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </div>
+            <div class="com-group-input fr">
+                <div class="label">Continent</div>
+                <select id="" class="select sm-select f14">
+                    <option value="">1</option>
+                    <option value="">1</option>
+                </select>
+            </div>
+        </div>
+        -->
+        <a href="" class="btn btn-confirm js-register mt30">REGISTER</a>
+        <p class="top-line mt30 pt30">Already had an account? Please login!</p>
+        <a href="login.html" class="btn btn-default">LOGIN</a>
+    </section>
+    
+    <script src="/js/lib/jquery-1.11.3.min.js"></script>
+    <script src="/js/lib/public_module.js"></script>
+    <script src="/js/login_and_register.js"></script>
+    <script>
+        $(function(){
+            UserStatusExecution.register();
+        })
+    </script>
+    </body>
+</html>
+  
