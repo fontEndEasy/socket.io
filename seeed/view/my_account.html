@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html-head">
+   <meta charset="utf-8">
+    <script src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script src="../js/base_module.js"></script>
+    <script src="../js/webuploader.min.js"></script>
+    <link rel="stylesheet" href="../css/animate.css">
+
+</head>
+
+<body class="hide">
+    <header class="header" id="header"></header>
+    
+    <section class="item-list com-width center clear" id="account">
+       <!--left nav -->
+        <div class="item-list__filters fl">
+            <div class="block rel">
+<!--
+               <i class="fa fa-angle-up js-slide f26 abs cup"></i>
+                <h2 class="title">MY ACCOUNT</h2>
+-->
+                <ul class="choice-list f-os-l f14 account-nav">
+                    <li class="selected js-order"><a href="" title="">Order History</a></li>
+                    <li class="js-address"><a href="#" title="">Address Book</a></li>
+<!--                    <li class="js-payment"><a href="#" title="">Payment Method</a></li>-->
+                    <li class="js-personal"><a href="#" title="">Personal Detail</a></li>
+                    <li class="js-logout"><a href="#" title="Log Out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>  
+        
+        <!--Order History-->
+        <div class="account-block fr" id="order-history">
+            <h1 class="title">ORDER HISTORY</h1>
+             <div class="theme-popover reupload_warning">
+             <!-- <span class="upload_tit">Please upload your file</span> -->
+                <div class="re_upload re_upload_box">
+                  <div class="re_upload_item re_upload_tt">&nbsp;&nbsp;Re-upload</div>
+                </div>
+                <div class="m20"> <span class="upload_close fl">Back</span><span class="upload_con fr btn-confirm">Confirm</span></div>
+                <input type="hidden" class="child-order-num" value=" " />
+                 
+            </div>
+            <div class="overlay"></div>
+          
+            <!--tracking box -->
+<!--
+            <div class="track-box f14 clear">
+                <div class="clear pl20 pr20">
+                    <div class="fl">Tracking Number: <span>661418233237</span></div>
+                    <div class="fr">Shipping method: <span>UPS</span></div>
+                </div>
+                <div class="track-detail">
+                    <p>2016-03-04  Friday 21:52:23</p>
+                    <p>Shenzhen, xx, xx, xx, xx</p>
+                </div>
+                <a href="" class="fr mr20">View all</a>
+            </div>
+-->
+            
+            <div class="order-list">
+               
+<!--
+                <div class="order-item">
+                    <div class="child-order-box">
+                        <div class="order-info clear rel">
+                            <div class="item">Order#<a href="order_detail.html?sn=160322161304" title="" class="underline val">160322161304</a></div>
+                            <div class="item">Place Date<span class="val">2016-03-22</span></div>
+                            <div class="item">Total<span class="val">$73.2493</span></div>
+                            <div class="ship-state fr c-10 f-os-sb">Pending</div>
+                        </div>
+                    </div>
+                </div>
+-->
+                
+            </div>
+        </div>
+        
+        <!--Aderess Book-->
+        <div class="account-block fr <my-address></my-address> hide" id="aderess-book">
+            <h1 class="title">ADDRESS BOOK</h1>
+            <div class="tc bar f12 mb20">
+                <a href="#" class="js-new-add mr5 underline">ADD AN NEW ADDRESS</a>+
+            </div>
+            <div class="address-list"></div>
+            <div class="tc bar f12 mb20"><a href="#" class="mr5 underline js-all-address hide">SHOW ALL SAVED ADDRESSES</a></div>
+        </div>
+        
+        <!--Payment Method-->
+        <!--
+        <div class="account-block fr hide" id="payment-method">
+            <h1 class="title">PAYMENT METHOD</h1>
+            <table class="table tc f14 payment-list">
+                <tr class="bg-f6 list-title">
+                    <th>Card Number:</th>
+                    <th>Card Type:</th>
+                    <th>Expiry Date:</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>*********8456</td>
+                    <td>VISA</td>
+                    <td>02/2020</td>
+                    <td><a href="" class="js-remove-card underline c-9b ">REMOVE</td>
+                </tr>
+                <tr>
+                    <td>*********8456</td>
+                    <td>VISA</td>
+                    <td>02/2020</td>
+                    <td><a href="" class="js-remove-card underline c-9b ">REMOVE</td>
+                </tr>
+                <tr>
+                    <td>*********8456</td>
+                    <td>VISA</td>
+                    <td>02/2020</td>
+                    <td><a href="" class="js-remove-card underline c-9b ">REMOVE</td>
+                </tr>
+                <tr>
+                    <td>*********8456</td>
+                    <td>VISA</td>
+                    <td>02/2020</td>
+                    <td><a href="" class="js-remove-card underline c-9b ">REMOVE</td>
+                </tr>
+            </table>
+        </div>
+        -->
+        
+        <!--Personal Detail-->
+        <div class="account-block fr hide" id="personal-detail">
+            <h1 class="title">PERSONAL DETAIL</h1>
+            <!--信息展示-->
+            <div class="show-detail clear">
+                <div class="detail-info"></div>
+                <a href="#" title="edit personal details" class="btn btn-confirm js-edit-detail fr mt100">EDIT PERSONAL DETAIL</a>
+            </div>
+            
+            <!--信息编辑-->
+            <div class="edit-detail f12 clear hide">
+                <div class="clear">
+                    <div class="com-group-input mr30">
+                        <div class="label">First Name</div>
+                        <input type="text" class="input js-fn">
+                    </div>
+                    <div class="com-group-input">
+                        <div class="label">Last Name</div>
+                        <input type="text" class="input js-ln">
+                    </div>
+                    <div class="com-group-input mr30">
+                        <div class="label">New Email Address</div>
+                        <input type="text" class="input js-new-email">
+                    </div>
+                    <div class="com-group-input hide">
+                        <div class="label">Enter Your Old Email Address</div>
+                        <input type="text" class="input js-old-mail">
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="js-update-psw fl mt10">Edit Password <i class="fa fa-angle-down ml5"></i></a>
+                </div>
+                <div class="mt40 pt30 mb100 top-line">
+                    <p class="tag">Email Preference</p>
+                    <p class="cup"><i class="fa fa-circle-o mr10"></i>Receive updates about my order and the latest exclusive offers, news and promotions</p>
+                </div>
+                <a href="#" title="save changes" class="btn btn-confirm js-save-edit fr mt100">SAVE CHANGES</a>
+            </div>
+        </div>
+    </section>
+
+    <!--确认弹出框-->
+    <section class="potlayer" id="">
+        <div class="potlayer__confirm tc clear">
+            <div class="title c-10">You can store maximun 20 address.</div>
+            <p class="text c-10">Please delete/modify existed address before you add a new one.</p>
+            <a href="" class="btn btn-default mr20 js-cancel fl">CANCEL</a>
+            <a href="" class="btn btn-confirm js-com fr">CONFIRM</a>
+        </div>
+    </section>
+    
+    <!--修改密码弹出框-->
+    <section class="potlayer" id="update-psw">
+        <div class="potlayer__body rel update-psw">
+            <a href="" class="btn-close-potlayer"><i class="fa fa-close"></i></a>
+            <div class="content f12">
+                <h1 class="f20 f-dp-m ">EDIT PASSWORD</h1>
+                <div class="com-group-input rel mt30">
+                    <div class="label">Old Password</div>
+                    <input type="password" class="input js-old-psw" placeholder="Your Old Password">
+                </div>
+                <div class="com-group-input rel mt30">
+                    <div class="label">New Password</div>
+                    <input type="password" class="input js-new-psw" placeholder="Your New Password">
+                </div>
+                <div class="com-group-input rel mt30">
+                    <div class="label">Re-enter New Password</div>
+                    <input type="password" class="input js-re-psw" placeholder="Your New Password">
+                </div>
+                <a href="#" class="btn dis-block btn-confirm js-confrim-update-psw mt30 mb30">CONFIRM</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="clear" id="footer"></footer>
+    <script src="../js/my_account.js"></script>
+    <script>
+        $(function(){   
+            myAccount();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head id="html-head">
+   <meta charset="utf-8">
+    <script src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script src="../js/base_module.js"></script>
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+<body>
+    <header class="header" id="header">
+    </header>
+    
+    <section class="com-width center mt40 pl40">
+        <h2 class="f-dp-m page-tit">SHOPPING CART</h2>
+    </section>
+    <div class="com-width center clear" id="cart">
+    <section class="cart-detail fl">
+       <!-- 购物车列表 start -->
+        <table class="comfirm-list w100p mt20 cart-list">
+            <tr class="f12 c-9b bottom-line">
+                <td style="width:170px;"></td>
+                <td style="width:284px;">ITEM</td>
+                <td style="width:170px;">UNIT PRICE</td>
+                <td style="width:126px;">QUANTITY</td>
+            </tr>
+        </table>
+        <!-- 购物车列表 end -->
+        
+        <!--缺货列表 start-->
+        <div class="js-outstock-box outstock-box hide mt50">
+            <div class="top-line pt20">Sorry , the product has been out of stock</div>
+            <table class="comfirm-list w100p mt20 js-outstock-list">
+            </table>
+        </div>
+        <!--缺货列表 end-->
+        
+    </section>
+    
+    <aside class="cart__summary fl ml30 hide"><!-- Summary -->
+        <div class="preview">
+            <div class="bottom-line pb20">
+                <h1 class="f-dp-m f20">SUMMARY</h1>
+                <div class="clear">
+                    <span class="fl">Subtotal (<span class="total-item mr5"></span>items)</span>
+                    <span class="price price-sub fr"></span>
+                </div>
+                <div class="clear j-dis-price hide">
+                    <span class="title fl">Discount</span>
+                    <span class="price price-dis fr">$3.0</span>
+                </div>
+            </div>
+            <div class="clear total f18">
+                <span class="fl title-total f-os-b">Total</span>
+                <div class="fr">
+                    <span class="title mr10">USD</span>
+                    <span class="price-total f-os-b"></span>
+                </div>
+            </div>
+            <!--<a href="order.html" class="js-checkout btn-save c-ff bg-0d tc mt20">CHECK OUT</a>-->
+            <a href="#" class="btn-save js-cart-checkout c-ff bg-0d tc mt20">CHECK OUT</a>
+        </div>
+    </aside>
+    </div>
+    
+    <footer class="clear" id="footer"></footer>
+
+    <!--poplayer 弹出层-->
+    <!--
+    <section class="poplayer" id="signup">
+        <div class="potlayer__body rel poplayer-md">
+            <a href="" class="btn-close-potlayer"><i class="fa fa-close"></i></a>
+            <div class="content">
+                <fieldset>
+                    <legend>SIGN UP FOR NOTIFICATION</legend>
+                    <h1 class="f-dp-m f23-3 tc">Will let you know when this item is back in stock, for sure!</h1>
+                    <div class="form-group mt30">
+                        <input type="email" class="form-control input-lg input-block" placeholder="Let us know your email">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block">SIGN UP FOR NOTIFICATION</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <section class="poplayer" id="comfirm-remove">
+        <div class="potlayer__body rel poplayer-md">
+            <a href="" class="btn-close-potlayer"><i class="fa fa-close"></i></a>
+            <div class="content">
+                <fieldset>
+                    <legend>Comfirm Removing this item from your cart?</legend>
+                    <h1 class="f-dp-m f22 tc">Comfirm Removing this item from your cart?</h1>
+                    <div class="form-group mt30 tc">
+                        <img src="../img/products_1.png" alt="Xadow Basic Sensors" class="img-border">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block">YES, PLEASE REMOVE</button>
+                    </div>
+                    <button class="btn btn-default btn-lg btn-block">NO NO NO, KEEP IT THERE</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    -->
+    <script src="../js/lib/public_module.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        $(function(){
+            cart();
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1080959988628815&ev=PageView&noscript=1"
+    /></noscript>
+</body>
+</html>

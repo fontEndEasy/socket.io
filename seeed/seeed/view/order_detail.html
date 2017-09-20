@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html-head">
+   <meta charset="utf-8">
+    <script src="/js/lib/jquery-1.11.3.min.js"></script>
+    <script src="/js/base_module.js"></script>
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+    
+    <section class="item-list com-width center clear" id="account">
+        <div class="item-list__filters fl">
+            <div class="block rel">
+               <i class="fa fa-angle-up js-slide f26 abs cup"></i>
+                <h2 class="title">MY ACCOUNT</h2>
+                <ul class="choice-list f-os-l f14 account-nav">
+                    <li class="selected"><a href="my_account.html#order" title="">Order History</a></li>
+                    <li><a href="my_account.html#address" title="">Adress Book</a></li>
+                    <!--<li><a href="my_account.html#payment" title="">Payment Method</a></li>-->
+                    <li><a href="my_account.html#personal" title="">Personal Detail</a></li>
+                    <li class="js-logout"><a href="#" title="">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Order Detail-->
+        <div class="account-block fr rel clear" id="order-detail">
+          
+          <div class="tracking-block js-tracking-block f12 mt20">
+          </div>
+          
+<!--
+      物流信息静态模板
+          <div class="tracking-detail-box f14 clear">
+                <div class="clear text bg-f6">
+                    <div class="fr">TRACKING NUMBER: <span>661418233237</span></div>
+                    <div class="fl">SHIPPING METHOD: <span>UPS</span></div>
+                </div>
+                <div class="track-detail">
+                   <p>Already Sign</p>
+                   <ul class="tracking-step c-9d">
+                       <li><div class="step-ico"><i class="fa fa-circle f12"></i><i class="block"></i></div>2015-03-04  Friday  13:15:20   Delivery</li>
+                       <li><div class="step-ico"><i class="fa fa-circle f12"></i><i class="block"></i></div>2015-03-04  Friday  13:15:20   Delivery</li>
+                       <li><div class="step-ico"><i class="fa fa-circle f12"></i><i class="block"></i></div>2015-03-04  Friday  13:15:20   Delivery</li>
+                       <li><div class="step-ico"><i class="fa fa-circle f12"></i><i class="block"></i></div>2015-03-04  Friday  13:15:20   Delivery</li>
+                       <li><div class="step-ico"><i class="fa fa-circle f12"></i><i class="block"></i></div>2015-03-04  Friday  13:15:20   Delivery</li>
+                   </ul>
+                </div>
+            </div>
+-->
+
+           
+            <!--结算信息 start-->
+            <div class="order-result f14 c-9b bottom-line pb40 mb40 hide">
+               <div class="clear">
+                   <a href="index.html" class="underline fl c-9b">&#60; Continue Shopping</a>
+                   <a href="#" class="js-print fr underline c-9b">Print</a>
+               </div>
+               <p class="f-dp f24 c-0d mt40 mb40">Your order is confirmed. Thank you!</p>
+               <p>We have sent the comfirmation email to <span class="js-c-mail c-4a">dexter.wang@seeed.cc</span></p>
+               <div>Once your package ships we will send an email with a link to track your order. Your order summary is below. </div>
+               <div class="mb30">Thank you again for your business. Have any questions, please contact us at <span class="c-4a">customercare@seeed.cc</span></div>
+               <a href="my_account.html" class="underline c-9b">View in My Account &#62;</a>
+            </div>
+            
+            
+            <!--结算信息 end-->
+            
+        </div>
+    </section>
+    
+    <footer class="clear" id="footer"></footer>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="/js/order_detail.js"></script>
+    <script>
+        $(function(){
+            
+            getOrderDetail();
+            
+            /* js code */
+            /*$('.account-nav').find('li').on('click', function(){
+                var $this = $(this),
+                    index = $this.index();
+                $this.addClass('selected').siblings('.account-nav li').removeClass('selected');
+                if(index != 4) {
+                    $('.account-block').eq(index).fadeIn('fast').siblings('.account-block').hide();
+                }
+                return false;
+            });
+            
+            
+            $('.js-toggle').on('click', function(){
+                var $this   = $(this),
+                    $parent = $this.parent().parent(),
+                    $list   = $parent.find('.order-detail');
+                
+                if($list.is(':visible')){
+                    $this.find('.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
+                    $list.slideUp(200);
+                }else {
+                    $this.find('.fa').removeClass('fa-angle-down').addClass('fa-angle-up');
+                    $list.slideDown(200);
+                }
+            });*/
+            
+        })
+    </script>
+</body>
+</html>

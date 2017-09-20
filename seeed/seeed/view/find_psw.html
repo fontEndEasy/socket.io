@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, minimun-scale=1.0, maxmun-scale=1.0, user-scalable=1.0">
+    <title>Find Password-Seeed</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author " content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="/css/lib/reset.css">
+    <link rel="stylesheet" href="/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/lib/public.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <!--[if lt IE9]>
+    <script type="text/javascript" src="/js/plugin/html5shiv.js"></script>
+    <![endif]-->
+    <!--plugin-->   
+</head>
+<body>
+    <header class="com-width center mtb50">
+        <a href="index.html" class="logo dis-block"><img src="/img/logo.png" alt="" class="state-logo"></a>
+    </header>
+    <section class="center user-wrap f12 user-operation">
+       <div class="find-psw">
+           <h1 class="f-dp-m f20">FIND PASSWORD</h1>
+           <div class="com-group-input js-find-box rel mt30">
+               <div class="label">Email address</div>
+               <input type="email" class="input f14" placeholder="Enter Your Email" id="email">
+           </div>
+        <a href="" class="btn btn-confirm js-find-psw mt30">SEND EMAIL</a>
+       </div>
+        <div class="set-new-psw hide">
+            <h1 class="f-dp-m f20">SET NEW PASSWORD</h1>
+            <div class="com-group-input rel mt30">
+                <div class="label">Password</div>
+                <input type="password" class="input f14" placeholder="Your Password" id="password">
+                <div class="warning tr hide abs">Please enter your password</div>
+            </div>
+            <div class="com-group-input rel mt30">
+                <div class="label">Confirm Password</div>
+                <input type="password" class="input f14" placeholder="Confirm Password" id="re-password">
+                <div class="warning tr hide abs"></div>
+            </div>
+        <a href="" class="btn btn-confirm js-reset-psw mt30">RESET</a>
+        </div>
+    </section>
+    
+    <script src="/js/lib/jquery-1.11.3.min.js"></script>
+    <script src="/js/lib/public_module.js"></script>
+    <script src="/js/login_and_register.js"></script>
+    <script>
+        $(function(){
+            UserStatusExecution.findPassword();
+            /*$.cookie('name','vaan')
+            console.log('获取的cookie是：'+$.cookie('user-login'));*/
+        })
+    </script>
+    </body>
+</html>
+  

@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head id="html-head">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+            Fusion
+        </title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <script src="../js/lib/jquery-1.11.3.min.js"></script>
+        <script src="../js/webuploader.min.js"></script>
+        <script src="../js/base_module.js"></script>
+        <link rel="stylesheet" href="../css/lib/public.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/fusion.css" />
+    </head>
+    
+    <body class="bg-ed">
+        <header class="header" id="header">
+        </header>
+        <!-- fusion_main_begin -->
+        <section class="fusion com-width center clear" id="fusion_ms">
+            <!-- fieldsets -->
+            <fieldset class="fusion_fst">
+                <div class="fusion_l">
+                    <h4>
+                        ● PCB Available Options
+                    </h4>
+
+                    <div class="uploadFile mt20">
+                       
+                            <div class="upload btn-reverse">
+                              <!--   <div id="btn_gerber" class="btn btn-reverse btn-block btn-lg" type="button">
+                                    <span class="glyphicon glyphicon-cloud-upload">
+                                    </span>
+                                    Select your Gerber File(only zip, rar accepted)
+                                </div> -->
+                             <!--    <input id="attrib-36-0" name="attrib-36-0" type="file" accept="aplication/zip,aplication/rar" class="filebtn"> -->
+                             <div class="upload_box"><i class="fa fa-cloud-upload"></i>Select your Gerber File(only zip, rar accepted)</div>
+                              <div class="pcb_csv"></div> 
+                            </div>
+                            <p class="mt10 text-center guideline">
+                                Hint：Need help? You can check the
+                                <a href="http://support.seeedstudio.com/knowledgebase/articles/422482-fusion-pcb-order-submission-guidelines"
+                                target="_blank">
+                                    Order Submission Guideline
+                                </a>
+                            </p>
+                            <div class="form-horizontal showTxt">
+                                <div class="form-group" style="display:none">
+                                    <label class="col-sm-4 control-label bold" for="projectName">
+                                        Project name
+                                    </label>
+                                    <div class="fusinput" style="display:none">
+                                        <input type="text" placeholder="Project name" name="projectfile-1" id="projectfile-1"
+                                        class="form-control input-sm files">
+                                    </div>
+                                </div>
+
+                            </div>
+                                 <div class="text-right">
+                                    <input type="button" name="PCB Assembly" class="next fusion_next action-button"
+                                    value="PCB Assembly" />
+                                     <button id="btn-AddPcbToCart" data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn action-button addcart js-add-cart" name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                                </div>
+                            <div class="col-md-12" id="showimg">
+                            </div>
+                            <input class="hide" type="hidden" name="product" value="835"></input>
+                      
+                    </div>
+                   
+                </div>
+
+
+
+                </div>
+                <div class="fusion_r grayBoxs">
+                    <div class="gerberList">
+                        <span class="c9 bold OriginalTotalPricesBox  hide " style="text-decoration: line-through; display: none;">
+                            $
+                            <span class="OriginalTotalPrices">
+                                
+                            </span>
+                        </span>
+                        <span class="big">
+                            $
+                            <span class="TotalPrices">
+                                
+                            </span>
+                        </span>
+                    </div>
+                    <div class="quotationList">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul class="list-group-cart">
+                            <li id="PcbServicePriceBox" class="PcbServicePriceBox">
+                                <div class="priceList">
+                                    PCB Cost
+                                    <span class="pull-right">
+                                        <span class="c9 bold  hide" style="text-decoration: line-through; display: none;"
+                                        id="pcbOriginalPriceBox">
+                                            $
+                                            <span id="pcbOriginalPriceCost">
+                                               
+                                            </span>
+                                        </span>
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbServicePrice">
+                                                
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                               
+                               
+                            </li>
+                            <li id="StencilServicePriceBox" class="hide">
+                                <div class="priceList">
+                                    Stencil Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span id="StencilServicePrice">
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <div id="StencilAttribPriceList-118">
+                                    <span class="c9">
+                                        Fiducial Mark:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-118">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-118" class="pull-right">
+                                    </span>
+                                </div>
+                                <div id="StencilAttribPriceList-119">
+                                    <span class="c9">
+                                        Thickness:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-119">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-119" class="pull-right">
+                                    </span>
+                                </div>
+                                <div id="StencilAttribPriceList-120">
+                                    <span class="c9">
+                                        Dimension:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-120">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-120" class="pull-right">
+                                    </span>
+                                </div>
+                                <div id="StencilAttribPriceList-121">
+                                    <span class="c9">
+                                        Polishing Techniques Code:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-121">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-121" class="pull-right">
+                                    </span>
+                                </div>
+                                <div id="StencilAttribPriceList-145">
+                                    <span class="c9">
+                                        Qty.:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-145">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-145" class="pull-right">
+                                    </span>
+                                </div>
+                            </li>
+                            <li id="PcbaServicePriceBox" class="hide">
+                                <div class="priceList">
+                                    Components Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span id="PcbaServicePrice">
+                                                
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <div id="PcbaAttribPrice-125">
+                                    <span class="c9">
+                                        PCBA Qty.:
+                                    </span>
+                                    <span id="PcbaAttribPriceVal-125">
+                                         5
+                                        <span id="PcbaAttribPriceCost-125" class="pull-right">
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li id="PcbaAssemblyPriceBox" class="hide">
+                                <div class="priceList">
+                                    Assembly Cost
+                                    <span class="c9 bold  hide" style="text-decoration:line-through;" id="OriginalAssemblyPriceBox">
+                                        $
+                                        <span id="OriginalAssemblyPrice">
+                                        
+                                        </span>
+                                    </span>
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span id="PcbaAssemblyPrice">
+                                         
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <input type="hidden" id="opl_handling_fee" value="0" />
+                                <div id="StencilAttribPriceList-145">
+                                    <span class="c9">
+                                        Qty.:
+                                    </span>
+                                    <span id="StencilAttribPriceVal-145">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-145" class="pull-right">
+                                    </span>
+                                </div>
+                            </li>
+                            <li id="PcbaSetupPriceBox" class="hide">
+                                <div class="priceList">
+                                    Setup Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span id="PcbaSetupPrice">
+                                           
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span id="setupCostTip" class="hide">
+                                        Setup cost including tooling cost, material shipping cost, tax, wastage,
+                                        backup material during production.
+                                    </span>
+                                </div>
+                                <input type="hidden" id="PcbaSetupFee" value="10" />
+                                <input type="hidden" id="WasteFee" value="0" />
+                            </li>
+                            <li>
+                                <div class="text-right group-cart-total mtb10 mr5">
+                                    <span class="total-label">
+                                        Sub-Total:
+                                    </span>
+                                    <span class="c9 bold OriginalTotalPricesBox  hide" style="text-decoration: line-through; display: none;">
+                                        $
+                                        <span class="OriginalTotalPrices">
+                                           
+                                        </span>
+                                    </span>
+                                    <b class="oc">
+                                        $
+                                        <span id="TotalPrices" class="TotalPrices">
+                                          
+                                        </span>
+                                    </b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" id="base_delivery_date" value="1461747898" />
+                    <div class="mb5 hide">
+                        <b>
+                            Estimated Shipping Date:
+                            <span id="delivery_date">
+                                Apr. 27, 2016
+                            </span>
+                        </b>
+                    </div>
+                    <div class="text-center">
+                        <button id="btn-AddPcbToCart" data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn btn-success btn-block btn btn-primary js-add-cart" name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- fieldsets --> 
+    <fieldset class="fusin_sec">
+        <div class="fusion_l">
+            <h4 class="assem_tit">
+                <span class="fusion_pre edit">
+                    Edit
+                </span>
+                ● PCB Available Options 
+            </h4>
+            <h4 >
+                ● PCB Assembly
+            </h4>
+          <div class="fpcb_error hide">Not enough PCB to be assembled, please <a class="fusion_pre">go back to add more PCB.</a></div>  
+         
+        <div class="form-group fpcb">
+ 
+            <label class="control-label" id="PcbaAttribName-125"><s class="c">*</s> PCBA Qty</label>
+      
+              <div class="fusainput">  <input type="text"  value="5" class="form-control PcbaAttrib js-qty" name="PcbaAttrib" id="PcbaAttrib-125">
+            
+                
+                </div>
+                <p class=" form-inline-fa css_for_warn ">For prototyping, we suggest it starts from 2pcs.<i class="fa fa-pulse"></i></p>
+            </div>
+
+                 
+                  <div class="uploadFile mt20">              
+                      
+                   <div class="upload_pcba btn-reverse">
+                   
+                     <div class="upload_box_pcba"><span class="glyphicon glyphicon-cloud-upload"></span>
+                      <i class="fa fa-cloud-upload"></i>Select Your BOM  ( only CSV accepted )</div>
+        
+               <input class="hide"  type="hidden" name="product_pcba" value="1511" />
+                    </div>
+
+                </div>
+         
+                              <div class="mt20">
+                      
+                              <div class="guideline">
+                                Please format your BOM file according to the <a href="http://bz.seeedstudio.com/service/index.php?r=pcb/DownloadBom">template</a>.
+Fill the compelete manufacturer part number, in order to be matched and sourced the right parts.
+                            </div>
+
+                            <div class="pcba-warning hide">
+                            <p><i></i> Oops, these parts can't be matched or are out of stock. <br>You can send us your Gerber file, BOM, and requirement <a href="mailto:propagate@seeed.cc">for an offline quote</a></p>
+                            <span> </span>
+                            </div>
+                            <h3>BOM List</h3>
+                            <div class="table-responsive">
+                                    <table class="table-bordered">
+                                        <thead>
+                                            <tr>
+                                               <th></th> 
+                                               <th>Part/Designator</th>
+                                               <th>Mfr. Part #</th>
+                                               <th>Description</th>
+                                               <th>Quantity</th>
+                                               <th>Unit Price</th>
+                                               <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                           <div class="text-right">
+
+                                    <input type="button" name="← Back" class="fusion_pre action-button j-pcba"
+                                    value="← Back" />
+                                     <button id="btn-AddPcbToCart" data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn action-button addcart js-add-cartpcba" name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                                </div>   
+                               
+
+                              </div>
+                                 <div class="theme-popover">
+  <h4>Please confirm the uncertain parts, or it will not be assembled.</h4>
+  <div class="m20">
+      <span class="fpcba_close">Back</span> 
+  </div>
+</div><div class="overlay"></div>
+                    
+                </div>
+                <div class="fusion_r grayBoxs">
+                    <div class="gerberList">
+                        <span class="c9 bold OriginalTotalPricesBox  hide " style="text-decoration: line-through; display: none;">
+                            $
+                            <span class="OriginalTotalPrices">
+                               
+                            </span>
+                        </span>
+                        <span class="big">
+                            $
+                            <span class="TotalPrices pcba_price">
+                               
+                            </span>
+                        </span>
+                    </div>
+                    <div class="quotationList">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul class="list-group-cart">
+                              <li id="PcbServicePriceBox" class="PcbServicePriceBox">
+                                <div class="priceList pcbabox">
+                                    PCB Cost
+                                    <span class="pull-right">
+                                        <span class="c9 bold  hide" style="text-decoration: line-through; display: none;"
+                                        id="pcbOriginalPriceBox">
+                                            $
+                                            <span id="pcbOriginalPriceCost">
+                                               
+                                            </span>
+                                        </span>
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbServicePrice">
+                                                
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                               
+                               
+                            </li>
+                           
+                            <li class="PcbaServicePriceBox" class="hide">
+                                <div class="priceList">
+                                    Components Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaServicePrice">
+                                               0
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                                <div class="PcbaAttribPrice-125">
+                                    <span class="c9">
+                                        PCBA Qty.:
+                                    </span>
+                                    <span class="PcbaAttribPriceVal-125">5
+                                       
+                                        <span class="PcbaAttribPriceCost-125" class="pull-right">
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="PcbaAssemblyPriceBox">
+                                <div class="priceList">
+                                    Assembly Cost
+                                    <span class="c9 bold  hide" style="text-decoration:line-through;" id="OriginalAssemblyPriceBox">
+                                        $
+                                        <span class="OriginalAssemblyPrice">
+                                            0
+                                        </span>
+                                    </span>
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaAssemblyPrice">
+                                              0 
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+
+                                <input type="hidden" class="opl_handling_fee" value="0" />
+                                 <div id="StencilAttribPriceList-145">
+                                    <span class="c9">
+                                        
+                                    </span>
+                                    <span id="StencilAttribPriceVal-145">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-145" class="pull-right">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="PcbaSetupPriceBox" class="hide">
+                                <div class="priceList">
+                                    Setup Cost
+                                    <span class="pull-right">
+                                        <b class="oc">
+                                            $
+                                            <span class="PcbaSetupPrice">
+                                               0
+                                            </span>
+                                        </b>
+                                    </span>
+                                </div>
+                        
+                                <input type="hidden" class="PcbaSetupFee" value="10" />
+                                <input type="hidden" class="WasteFee" value="0" />
+                                 <div id="StencilAttribPriceList-146" >
+                                    <span class="c9">
+                                       
+                                    </span>
+                                    <span id="StencilAttribPriceVal-146">
+                                    </span>
+                                    <span id="StencilAttribPriceCost-146" class="pull-right hide">
+                                    </span>
+                                </div>
+                            </li>
+                            
+                            <li class="pcba_cart">
+                                <div class="text-right group-cart-total ">
+                                    <span class="total-label">
+                                        Sub-Total:
+                                    </span>
+                                    <span class="c9 bold OriginalTotalPricesBox  hide" style="text-decoration: line-through; display: none;">
+                                        $
+                                        <span class="OriginalTotalPrices">
+                                          
+                                        </span>
+                                    </span>
+                                    <b class="oc">
+                                        $
+                                        <span id="TotalPrices" class="TotalPrices pcba_price">
+                                          
+                                        </span>
+                                    </b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" class="base_delivery_date" value="1461747898" />
+                    <div class="mb5 hide">
+                        <b>
+                            Estimated Shipping Date:
+                            <span class="delivery_date">
+                                Apr. 27, 2016
+                            </span>
+                        </b>
+                    </div>
+                    <div class="text-center">
+                        <button  data-loading-text="Process..." data-add-text="Add to Cart"
+                        class="btn btn-success btn-block btn btn-primary js-add-cartpcba" 
+                        name="yt2" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <!-- fusion_main_end -->
+        <footer class="clear" id="footer">
+        </footer>
+<!--        <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript">
+        </script>-->
+        <script src="../js/lib/jquery.easing.min.js" type="text/javascript">
+        </script>
+        <script src="../js/fusion.js">
+        </script>
+        <script>
+            $(function() {
+                getItemDetail();
+               
+            });
+        </script>
+    </body>
+
+</html>
